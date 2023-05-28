@@ -1,0 +1,82 @@
+@import url(./../variables/var.scss);
+
+.header {
+    width: 100%;
+    padding: 33.5px;
+
+
+    &-box {
+        display: flex;
+        max-width: 1180px;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        &__left {
+
+            display: flex;
+
+            padding: 9px 0;
+            gap: 30px;
+        }
+
+        &__right {
+            display: flex;
+
+        }
+
+    }
+}
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+
+    &-lin {
+        margin-right: 30px;
+    }
+
+}
+nav{
+    display: flex;
+
+    align-items: center;
+}
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+
+    &-item {
+        color: gray;
+
+        & a:hover {
+            color: black;
+            transition: 0.5s all linear;
+        }
+    }
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    &-logo {
+        width: 41px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #C3DCE3;
+        border-radius: 100px;
+        margin-right: 10px;
+    }
+    &-name{
+        padding: 9px 0;
+        margin-right: 30px;
+    }
+    &-login{
+        padding: 9px 0;
+    }
+}

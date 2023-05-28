@@ -1,0 +1,69 @@
+.main-section__one {
+  max-width: 1180px;
+  width: 100%;
+  min-height: 740px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  height: 100%;
+  background: pink;
+  margin: 0 auto;
+  padding: 95px 0;
+}
+
+.section-content__left-subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #2B788B;
+  margin-bottom: 24px;
+}
+.section-content__left-title {
+  width: 531px;
+  height: 201px;
+  font-family: "Dela Gothic One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: black;
+  margin-bottom: 30px;
+}
+.section-content__left-text {
+  width: 396.89px;
+  height: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.button-style {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  color: #2B788B;
+  background: #C3DCE3;
+  border-radius: 100px;
+  padding: 14px 22px;
+  border: 0;
+  margin-bottom: 49px;
+}
+.button-style:hover {
+  background: #2B788B;
+  color: white;
+  transition: 0.5s all linear;
+}/*# sourceMappingURL=main-section.css.map */
