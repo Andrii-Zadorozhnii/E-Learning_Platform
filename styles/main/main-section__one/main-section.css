@@ -5,11 +5,13 @@
   max-height: -moz-fit-content;
   max-height: fit-content;
   height: 100%;
-  background: pink;
   margin: 0 auto;
   padding: 95px 0;
 }
 
+.section-content {
+  display: flex;
+}
 .section-content__left-subtitle {
   font-family: "Montserrat";
   font-style: normal;
@@ -45,6 +47,42 @@
   color: #757575;
   margin-bottom: 32px;
 }
+.section-content__right {
+  max-width: 933px;
+  width: 100%;
+  background: red;
+  max-height: 601px;
+  height: 100%;
+  position: relative;
+}
+.section-content__right-image-controller {
+  position: absolute;
+  z-index: 1;
+  margin-top: auto;
+  transform: translate(0, 80%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.section-content__right-image-boy {
+  position: absolute;
+  z-index: 2;
+  left: 51.77px;
+  top: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.section-content__right-image-plant {
+  position: absolute;
+  z-index: 3;
+  float: right;
+  left: 380px;
+  top: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
 
 .button-style {
   font-family: "Montserrat";
@@ -66,4 +104,51 @@
   background: #2B788B;
   color: white;
   transition: 0.5s all linear;
+}
+
+.statistics-one {
+  width: 163px;
+}
+.statistics-one__image {
+  margin-right: 10px;
+}
+.statistics-one__text {
+  display: flex;
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.statistics-one__text-span {
+  color: #2B788B;
+}
+.statistics-one__text-subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+  color: #585858;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  text-align: center;
+}
+
+.statistics-two {
+  width: 92px;
+}
+
+.section-content__left-statistics {
+  display: flex;
+  max-width: 352px;
+  width: 100%;
+  justify-content: space-between;
 }/*# sourceMappingURL=main-section.css.map */

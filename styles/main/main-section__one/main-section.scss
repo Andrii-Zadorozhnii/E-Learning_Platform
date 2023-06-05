@@ -7,49 +7,94 @@
     min-height: 740px;
     max-height: fit-content;
     height: 100%;
-    background: pink;
+
     margin: 0 auto;
     padding: 95px 0;
 }
 
-.section-content__left {
+.section-content {
+    display: flex;
 
-    &-subtitle {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 100%;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: #2B788B;
-        margin-bottom: 24px;
+    &__left {
+
+        &-subtitle {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #2B788B;
+            margin-bottom: 24px;
+        }
+
+        &-title {
+            width: 531px;
+            height: 201px;
+            font-family: 'Dela Gothic One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 120%;
+            letter-spacing: -0.04em;
+            color: $mainFontColor;
+            margin-bottom: 30px;
+        }
+
+        &-text {
+            width: 396.89px;
+            height: 50px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: -0.04em;
+            color: #757575;
+            margin-bottom: 32px;
+        }
     }
 
-    &-title {
-        width: 531px;
-        height: 201px;
-        font-family: 'Dela Gothic One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 56px;
-        line-height: 120%;
-        letter-spacing: -0.04em;
-        color: $mainFontColor;
-        margin-bottom: 30px;
-    }
+    &__right {
+        max-width: 933px;
+        width: 100%;
+        background: red;
+        max-height: 601px;
+        height: 100%;
+        position: relative;
 
-    &-text {
-        width: 396.89px;
-        height: 50px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 140%;
-        letter-spacing: -0.04em;
-        color: #757575;
-        margin-bottom: 32px;
+        &-image {
+            &-controller {
+                position: absolute;
+                z-index: 1;
+                margin-top: auto;
+                transform: translate(0, 80%);
+                object-fit: cover;
+                overflow: hidden;
+
+            }
+
+            &-boy {
+                position: absolute;
+                z-index: 2;
+                left: 51.77px;
+                top: 0px;
+                object-fit: cover;
+                overflow: hidden;
+
+            }
+
+            &-plant {
+                position: absolute;
+                z-index: 3;
+                float: right;
+                left: 380px;
+                top: 30px;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
     }
 }
 
@@ -69,9 +114,62 @@
     border: 0;
     margin-bottom: 49px;
 
-    &:hover{
+    &:hover {
         background: #2B788B;
         color: white;
         transition: 0.5s all linear;
     }
+}
+
+.statistics-one {
+    width: 163px;
+
+    &__image {
+        margin-right: 10px;
+    }
+
+    &__text {
+        display: flex;
+        ;
+        font-family: 'Dela Gothic One';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        color: #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        &-span {
+            color: #2B788B;
+        }
+
+        &-subtitle {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: -0.04em;
+            color: #585858;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            text-align: center;
+        }
+    }
+}
+
+.statistics-two {
+    width: 92px;
+}
+
+
+.section-content__left-statistics {
+    display: flex;
+    max-width: 352px;
+    width: 100%;
+    justify-content: space-between;
 }
